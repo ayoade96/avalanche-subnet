@@ -7,7 +7,7 @@ import "../src/Vault.sol";
 contract VaultScript is Script {
     Vault vault;
 
-    address token = 0x5DB9A7629912EBF95876228C24A848de0bfB43A9;
+    address token = 0x5aa01B3b5877255cE50cc55e8986a7a5fe29C70e;
 
     function setUp() public {}
 

@@ -6,67 +6,16 @@ This smart contract allows players to collect, build, and earn rewards for their
 
 - It has two main contracts, `ERC20` token contract and the `Vault` contract
 
-- The ERC20-Token contract, `src/ERC20.sol`, was deployed on the `marsSubnet` network at the contract address `0x5DB9A7629912EBF95876228C24A848de0bfB43A9` and
-- The Vault contract, `src/Vault.sol` was deployed on the `marsSubnet` network at the contract address`0xa4DfF80B4a1D748BF28BC4A271eD834689Ea3407`.
+- The ERC20-Token contract, `src/ERC20.sol`, was deployed on the `mySubnet` network at the contract address `0x5aa01B3b5877255cE50cc55e8986a7a5fe29C70e` and
+- The Vault contract, `src/Vault.sol` was deployed on the `mySubnet` network at the contract address`0x4Ac1d98D9cEF99EC6546dEd4Bd550b0b287aaD6D`.
 
-## Table of Contents
-
-- [DeFi Empire Smart Contract](#defi-empire-smart-contract)
-  - [Overview](#overview)
-  - [Table of Contents](#table-of-contents)
-  - [Deploying my EVM subnet using the Avalanche CLI](#deploying-my-evm-subnet-using-the-avalanche-cli)
-  - [Added Subnet to Metamask and Connected to Injected Provider](#added-subnet-to-metamask-and-connected-to-injected-provider)
-  - [Deploying the Smart contract using Foundry](#deploying-the-smart-contract-using-foundry)
-    - [The ERC20-TOken and Vault Contract](#the-erc20-token-and-vault-contract)
-  - [Contract Details](#contract-details)
-  - [Vault Contract Functionalities](#vault-contract-functionalities)
-    - [Deposit](#deposit)
-    - [Withdraw](#withdraw)
-    - [ERC-20 Interface](#erc-20-interface)
-  - [Interacting with the deployed contracts address](#interacting-with-the-deployed-contracts-address)
-    - [Interacting with the ERC20 token contract](#interacting-with-the-erc20-token-contract)
-    - [Interacting with the Vault contract](#interacting-with-the-vault-contract)
-  - [Usage Guidelines](#usage-guidelines)
-  - [Demo Videos](#demo-videos)
-  - [Author](#author)
-  - [Disclaimer](#disclaimer)
-
-## Deploying my EVM subnet using the Avalanche CLI
-
-![01](./images/01.png)
-
-![02](./images/02.png)
-
-## Added Subnet to Metamask and Connected to Injected Provider
-
-![03](./images/03.png)
-
-## Deploying the Smart contract using Foundry
-
-- **`ERC20.sol`**
-
-![04](./images/04.png)
-
-- **`Vault.sol`**
-
-![05](./images/05.png)
-
-![06](./images/06.png)
 
 ### The ERC20-TOken and Vault Contract
 
-- The ERC20-Token contract, `src/ERC20.sol`, was deployed on the `marsSubnet` network at the contract address `0x5DB9A7629912EBF95876228C24A848de0bfB43A9` and
-- The Vault contract, `src/Vault.sol` was deployed on the `marsSubnet` network at the contract address`0xa4DfF80B4a1D748BF28BC4A271eD834689Ea3407`.
+- The ERC20-Token contract, `src/ERC20.sol`, was deployed on the `mySubnet` network at the contract address `0x5aa01B3b5877255cE50cc55e8986a7a5fe29C70e` and
+- The Vault contract, `src/Vault.sol` was deployed on the `mySubnet` network at the contract address`0x4Ac1d98D9cEF99EC6546dEd4Bd550b0b287aaD6D`.
 - The vault contract is used for managing deposits and withdrawals of a specified ERC-20 token.
 - It has functionalities that allows users to deposit tokens, minting shares in proportion to the deposited amount, and later withdraw a corresponding amount of tokens based on the shares they hold.
-
-## Contract Details
-
-- **Contract Address:** `0xa4DfF80B4a1D748BF28BC4A271eD834689Ea3407`
-- **Network:** marsSubnet
-- **Chain ID** 64643074
-- **Currency Symbol** MARS
-- **License:** MIT
 
 ## Vault Contract Functionalities
 
@@ -134,44 +83,6 @@ interface IERC20 {
 }
 ```
 
-## Interacting with the deployed contracts address
-
-### Interacting with the ERC20 token contract
-
-- Initial State
-
-![07](./images/07.png)
-
-- Minting tokens
-
-![08](./images/08.png)
-
-- Burning tokens
-
-![09](./images/09.png)
-
-- Approving the Vault contract to spend 100000 units of the ERC20 token
-
-![10](./images/10.png)
-
-### Interacting with the Vault contract
-
-- Depositing 10000 units of the ERC20 token on the Vault
-
-![11](./images/11.png)
-
-- Checking Balance after deposit
-
-![12](./images/12.png)
-
-- Withdrawing
-
-![13](./images/13.png)
-
-- Checking Balance After Withdrawal
-
-![14](./images/14.png)
-
 ## Usage Guidelines
 
 1. **Token Approval:**
@@ -194,17 +105,12 @@ function approve(address spender, uint amount) external returns (bool);
    function balanceOf(address account) external view returns (uint);
    ```
 
-## Demo Videos
-
-https://www.loom.com/share/c27c0fb724974177ad407bcead436d1e?sid=7c09cd67-4ef5-4547-b12a-7a4557b521a1
-
-https://www.loom.com/share/6e7fa57107714ac2b544bf122a91351d?sid=3360f4f6-1079-4ac0-b064-386201829daa
 
 ## Author
 
-Marcellus Ifeanyi
-[@metacraftersio](https://twitter.com/Mars_Energy)
+Ayoade Abdulrahman
+[@metacraftersio](https://twitter.com/Abulrahman)
 
 ## Disclaimer
 
-- This smart contract is provided under the MIT license, and users are encouraged to review and understand the code before interacting with it, also this contract is deployed on `marsSubnet` Network (my EVM subnet using the Avalanche CLI).
+- This smart contract is provided under the MIT license, and users are encouraged to review and understand the code before interacting with it, also this contract is deployed on `mySubnet` Network (my EVM subnet using the Avalanche CLI).
